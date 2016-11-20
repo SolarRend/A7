@@ -1,0 +1,86 @@
+/*
+* Author: Joshua Rodriguez
+* Contact: joshua_rodriguez@student.uml.edu
+* UMass Lowell student in GUI Programming 1 
+* Date Created: 11.02.2016
+* styling for basic form of the multiplication table page as well as the mult table
+*
+* **UPDATE** added css rule for error message
+*/
+
+/*setting color for whole page background */
+body {
+   background-color: lightgreen;
+}
+
+/* separating form from table */
+.formContent {
+   width: 400px;
+   float: left;
+}
+
+
+/* button for generating the table styles */
+button {
+   background-color: lightgray;
+   font-size: 20px;
+   color: black;
+}
+
+/* styling form vertically */
+input {
+   border: 2.5px solid blue;
+   font-size: 15px;
+   display: block;
+   margin-bottom: 15px;
+   width: 75px;
+}
+
+/* making labels a bit larger */
+label {
+   font-size: 20px;
+}
+
+/* Making instructions more distinguished */
+.instructions {
+   font-size: 22px;
+   margin-bottom: 30px;
+
+}
+
+/* positioning table */
+.tableContent {
+   float: left;
+   margin-top: 121px;
+}
+
+/* making the multiplication style something interesting to look at */
+.multTable {
+   border: 2.5px double blue;
+
+}
+
+/* style for odd cell */
+tr:nth-child(odd) {
+   color: red;
+}
+
+/* style for every cell */
+td {
+   border: 2px solid black;
+   padding: 5px;
+}
+
+/* giving a different color sheme and style to multipliers and multiplicands */
+.tableHeaders{
+   background-color: white;
+   color: black;
+   font-style: oblique;
+}
+
+/*Error message styling*/
+.error {
+   font-size: 15px;
+   font-style: italic;
+   color: red;
+}

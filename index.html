@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+- Author: Joshua Rodriguez
+- Contact: joshua_rodriguez@student.uml.edu
+- UMass Lowell student in GUI Programming 1 
+- Date Created: 11.02.2016
+- index page for containing a form that a user will fill out to display
+- a multiplication table
+
+- **UPDATE** Added jQuery CDN script + Validation PLUGIN
+-->
+<html lang="en">
+
+   <head>
+      <title>Multiplication Table</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+
+   <body>
+
+      <div class="formContent">
+
+         <!--Instructions-->
+         <p class="instructions">Enter an interval below. There are four spaces provided. 
+            Enter one integer in each space.</p>
+
+         <!--form structure to enter in the desired intervals-->
+         <form id="tableForm">
+            <label>Multipliers From:</label>
+            <input type="text" name="multiplierFrom" id="one"/>
+
+            <label>Multipliers To:</label>
+            <input type="text" name="multiplierTo" id="two"/>
+
+            <label>Multiplicands From:</label>
+            <input type="text" name="multiplicandFrom" id="three"/>
+
+            <label>Multiplicands To:</label>
+            <input type="text" name="multiplicandTo" id="four"/>
+         </form>
+         
+         <!--button that creates the dynamic table-->
+         <button id="generate">Generate Table</button>
+         
+      </div>
+
+      <!--skeleton structure for javascript to populate a table-->
+      <div class="tableContent"></div>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/jquery-validation-1.15.1/dist/jquery.validate.js"></script>
+      <script src="js/table.js"></script>
+      
+   </body>
+
+</html>
